@@ -1,0 +1,92 @@
+:root {
+    --mainbg: #cac5ae;
+    --mainmg: #b0ab96;
+    --mainfg: #575449;
+    --mainbright: #cbc6ae;
+    --bga: rgba(34, 34, 34, .7);
+    --fontcol: white;
+}
+
+::selection {
+    color: var(--mainbg);
+    background: var(--mainfg);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /*Map some 4x4 tiles onto the background*/
+    background-image: url("../assets/background.png");
+    background-color: var(--mainbg);
+    color: var(--mainfg);
+}
+
+.main {
+    border: 24px solid transparent;
+    border-image: url("../assets/border.png") 48 round;
+    border-top: none;
+}
+
+h1 {
+    text-shadow: 4px 4px var(--mainmg);
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+h2{
+    border: 2px solid var(--mainfg);
+    border-left: none;
+    border-right: none;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+/*The top Buttons to select your tab*/
+nav {
+    border: 24px solid transparent;
+    border-image: url("../assets/border.png") 48 round;
+    border-top: none;
+}
+
+nav button {
+    text-transform: uppercase;
+    background-color: var(--mainmg);
+    border: none;
+
+    font-weight: lighter;
+    font-size: large;
+
+    padding: 5px;
+    margin: 10px;
+    margin-top: 15px;
+}
+
+nav button:hover{
+    background-color: var(--mainfg);
+    color: var(--mainbg);
+    transition: 300ms ease;
+}
+
+nav button:focus{
+    outline: none;
+}
+
+/*Information Div*/
+.infobox{
+    border: 24px solid transparent;
+    border-image: url("../assets/infoborder.png") 16 round;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+ 
+    box-shadow: 3px 3px var(--mainmg);
+
+    background-color: var(--mainbright);
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer{
+    text-align: center;
+}
