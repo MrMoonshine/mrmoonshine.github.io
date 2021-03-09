@@ -65,10 +65,60 @@ nav button:hover{
     background-color: var(--mainfg);
     color: var(--mainbg);
     transition: 300ms ease;
+
 }
 
 nav button:focus{
     outline: none;
+}
+
+/*Main Content Box*/
+.cont{
+    margin: 0;
+    border: 24px solid transparent;
+    border-image: url("../assets/listborder.png") 16 round;
+    border-right: none;
+
+    /*width: 100%;
+    height: 100%;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+/*Selection for projects*/
+.projsel{
+    width: 32%;
+    box-shadow: 3px 3px var(--mainmg); 
+    background-color: var(--mainbright);
+}
+
+article{
+    width: 66%;
+    background-color: var(--mainbright);
+    box-shadow: 3px 3px var(--mainmg); 
+    padding: 0px;
+}
+
+article p, article b{
+    margin: 5px;
+}
+
+article h3{
+    background-color: var(--mainmg);
+    border-bottom: 4px double var(--mainmg);
+    background-clip: padding-box;
+    font-weight: lighter;
+    padding: 5px;
+    margin: 0px;
+}
+
+article img{
+    max-width: 40%;
+    float:left;
+    margin: 5px;
 }
 
 /*Information Div*/
