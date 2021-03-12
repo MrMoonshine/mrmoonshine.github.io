@@ -48,7 +48,7 @@ nav {
     border-top: none;
 }
 
-nav button {
+nav button, article button {
     text-transform: uppercase;
     background-color: var(--mainmg);
     border: none;
@@ -61,14 +61,14 @@ nav button {
     margin-top: 15px;
 }
 
-nav button:hover{
+nav button:hover, article button:hover {
     background-color: var(--mainfg);
     color: var(--mainbg);
     transition: 300ms ease;
 
 }
 
-nav button:focus{
+nav button:focus, article button:focus{
     outline: none;
 }
 
@@ -202,6 +202,10 @@ article p, article b{
     margin: 5px;
 }
 
+article ul, article ol, article li{
+    margin-left: 23%;
+}
+
 article h3{
     background-color: var(--mainmg);
     border-bottom: 4px double var(--mainmg);
@@ -218,7 +222,7 @@ article img{
 }
 
 /*Information Div*/
-.infobox{
+#infobox{
     border: 24px solid transparent;
     border-image: url("../assets/infoborder.png") 16 round;
     border-top: none;

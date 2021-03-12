@@ -31,11 +31,27 @@ function setArticles() {
   document.getElementsByName(myTopic)[0].style.display = "block";
 }
 
+function infoupt(si:string = "mrmoonshine.github.io") {
+  document.getElementById("infobox").innerHTML = si;
+}
+
 function loader() {
   setArticles();
+  infoupt();
+
   for (var a = 0; a < document.getElementsByName("articleinput").length; a++){
     document.getElementsByName("articleinput")[a].
-      addEventListener("change",setArticles);
+      addEventListener("change", setArticles);
+  }
+
+  for (const lab of document.getElementsByTagName("label")) {
+    lab.addEventListener("mouseover", function () {
+      infoupt(lab.getElementsByTagName("i")[0].innerHTML);
+    });
+
+    lab.addEventListener("mouseout", function () {
+      infoupt();
+    });
   }
 }
 

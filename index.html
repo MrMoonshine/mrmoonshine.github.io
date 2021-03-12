@@ -8,17 +8,11 @@
 
 <body>
     <nav>
-        <a href="http://alpakagott">
+        <a href="">
             <button>Home</button>
         </a>
-        <a href="http://alpakagott">
-            <button>Projects</button>
-        </a>
-        <a href="http://alpakagott">
-            <button>microcontroller</button>
-        </a>
-        <a href="http://alpakagott">
-            <button>3d printing</button>
+        <a href="https://github.com/MrMoonshine">
+            <button>github</button>
         </a>
     </nav>
 
@@ -28,45 +22,86 @@
         <div class="cont">
             <div id="projsel">
                 <input name="articleinput" type="radio" id="thispage" value="thispage" checked>
-                <label for="thispage">This Page
+                <label for="thispage">
+                    <i>This Page</i>
                     <span></span>
                 </label>
-                
+                <input name="articleinput" type="radio" id="minetest" value="minetest">
+                <label for="minetest">
+                    <i>Minetest Mods</i>
+                    <span></span>
+                </label>
                 <input name="articleinput" type="radio" id="atmelsam" value="atmelsam">
-                <label for="atmelsam">Atmel SAM CMSIS
+                <label for="atmelsam">
+                    <i>Atmel SAM CMSIS</i>
                     <span></span>
                 </label>
                 <input name="articleinput" type="radio" id="anitest" value="anitest">
-                <label for="anitest">Animationtester
+                <label for="anitest">
+                    <i>Animationtester</i>
                     <span></span>
                 </label>
             </div>
             <div id="articlespace">
                 <article name="thispage">
-                    <h3 id="articletitle">I can climb the highest mountain, cross the wildest sea</h3>
-                    <img src="articles/assets/yes_i_can_climb.png" alt="genshin climb">
-                    <p>I can feel St. Elmo's fire burnin' in me
-                        Burnin', burnin' in me, I can feel it burnin'
-                        St. Elmo's fire, St. Elmo's fire</p>
+                    <h3>MrMoonshine.github.io</h3>
+                    <img src="articles/assets/2b_pod_pat.png" alt="Nier Screenshot">
+                    <p>This page serves as a brief overview of my Github Projects<br>
+                    The list below shows some of my favourite project types that i commonly use for my projects
+                    </p>
+                    <ul>
+                        <li>Scala Projects</li>
+                        <li>Microcontrollers</li>
+                        <li>ESP-IDF Projects</li>
+                        <li>Std C++</li>
+                        <li>Qt5 Projects</li>
+                    </ul>
+                    <p>I wanted to create the UI of NieR:Automata in the browser.
+                        It's still not finished yet and there are much more things to do.
+                    </p>
+                    <a href="https://github.com/MrMoonshine/mrmoonshine.github.io">
+                        <button>Repository</button>
+                    </a>
+                </article>
+                <article name="minetest">
+                    <h3>Minetest Mods</h3>
+                    <img src="https://raw.githubusercontent.com/MrMoonshine/merch/main/screenshot.png" alt="minetestmod">
+                    <p>
+                        Minetest is a open-source clone of Minecraft.
+                         Modding is in Minetest much easier. And I did one.
+                    </p>
+                    <a href="https://github.com/MrMoonshine/merch">
+                        <button>Repository</button>
+                    </a>
                 </article>
                 <article name="atmelsam">
-                    <h3 id="articletitle">Polytetraflourethyl</h3>
-                    <p>Der PH Wert ist der Negativ dekatische Logharitmus
-                        der Konzentration der Hydroniumionen</p>
+                    <h3>Atmel SAM CMSIS</h3>
+                    <p>
+                        CMSIS refers to the bare-metal programming of 
+                        Atmel's ARM processors (ATSAM). CMSIS programming is basically just 
+                        shifting 32-bit values into registers and hope that it works as intended. 
+                        In my projects i used an ATSAM4S16C. 
+                    </p>
+                    <a href="https://github.com/MrMoonshine/SAM4S-BareMetal-Programs">
+                        <button>Repository</button>
+                    </a>
                 </article>
                 <article name="anitest">
-                    <h3 id="articletitle">Bless the alpaca god!</h3>
-                    <p><b>Country roads</b>, take me home
-                        To the place I belong
-                        West Virginia, mountain mama
-                        Take me home, country roads</p>
+                    <h3>Animationtester</h3>
+                    <img src="https://raw.githubusercontent.com/MrMoonshine/Animationtest/master/screenshot.png" alt="Animationtester">
+                    <p>The Animationtester is a tool that i wrote to verify my 2D animations.
+                        You can alter the frequency to see which framreate suits your animation most. 
+                        It uses Qt5 and runs on linux. 
+                        The pallete of the widgets has been tweaked to fit perfectly into the Ubuntu Yaru theme.
+                    </p>
+                    <a href="https://github.com/MrMoonshine/Animationtest">
+                        <button>Repository</button>
+                    </a>
                 </article>
             </div>
             <script src="scripts/dist/articles.js"></script>
         </div>
-        <div class="infobox">
-            Oida
-        </div>
+        <div id="infobox"></div>
     </div>
     <footer>&copy; David Monschein 2021</footer>
 </body>
