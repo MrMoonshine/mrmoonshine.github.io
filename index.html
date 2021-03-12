@@ -26,21 +26,43 @@
         <h1>MrMoonshine's Github.io</h1>
         <h2>This page is designated to present my open source projects</h2>
         <div class="cont">
-            <div class="projsel">
-                <ul>
-                    <li>This Page</li>
-                    <li>David's CMake Collection</li>
-                    <li>Animationtester</li>
-                    <li>Unicorn</li>
-                </ul>
+            <div id="projsel">
+                <input name="articleinput" type="radio" id="thispage" value="thispage" checked>
+                <label for="thispage">This Page
+                    <span></span>
+                </label>
+                
+                <input name="articleinput" type="radio" id="atmelsam" value="atmelsam">
+                <label for="atmelsam">Atmel SAM CMSIS
+                    <span></span>
+                </label>
+                <input name="articleinput" type="radio" id="anitest" value="anitest">
+                <label for="anitest">Animationtester
+                    <span></span>
+                </label>
             </div>
-            <article>
-                <h3 id="articletitle">I can climb the highest mountain, cross the wildest sea</h3>
-                <img src="articles/assets/yes_i_can_climb.png" alt="genshin climb">
-                <p>I can feel St. Elmo's fire burnin' in me
-                    Burnin', burnin' in me, I can feel it burnin'
-                    St. Elmo's fire, St. Elmo's fire</p>
-            </article> 
+            <div id="articlespace">
+                <article name="thispage">
+                    <h3 id="articletitle">I can climb the highest mountain, cross the wildest sea</h3>
+                    <img src="articles/assets/yes_i_can_climb.png" alt="genshin climb">
+                    <p>I can feel St. Elmo's fire burnin' in me
+                        Burnin', burnin' in me, I can feel it burnin'
+                        St. Elmo's fire, St. Elmo's fire</p>
+                </article>
+                <article name="atmelsam">
+                    <h3 id="articletitle">Polytetraflourethyl</h3>
+                    <p>Der PH Wert ist der Negativ dekatische Logharitmus
+                        der Konzentration der Hydroniumionen</p>
+                </article>
+                <article name="anitest">
+                    <h3 id="articletitle">Bless the alpaca god!</h3>
+                    <p><b>Country roads</b>, take me home
+                        To the place I belong
+                        West Virginia, mountain mama
+                        Take me home, country roads</p>
+                </article>
+            </div>
+            <script src="scripts/dist/articles.js"></script>
         </div>
         <div class="infobox">
             Oida
